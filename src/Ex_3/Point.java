@@ -5,6 +5,7 @@ public class Point {
     
     //Private Variables...
     private double xCoordinate, yCoordinate;
+    private String point;
     
     //Constructor...
     public Point(double xCoordinate,double yCoordinate) {  
@@ -29,6 +30,24 @@ public class Point {
     public void setyCoordinate(double yCoordinate) {
         this.yCoordinate = yCoordinate;
     }
+
+    public String getPoint() {
+        return point;
+    }
+
+    public void setPoint(String point) {
+        this.point = point;
+    }
+ 
+    //Point Class Process Methods...
+    public String axisPoint(){
+        String testPoint = "(" + String.valueOf(getxCoordinate()) +
+                "," + String.valueOf(getyCoordinate()) +")";
+        setPoint(testPoint);
+        return getPoint();
+    }
+    
+    
     
     
     
