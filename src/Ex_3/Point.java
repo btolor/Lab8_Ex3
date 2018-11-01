@@ -8,9 +8,14 @@ public class Point {
     private String point;
     
     //Constructor...
+    /*
+    The constructor method sets the x and y coordinates 
+    and and the point...
+    */
     public Point(double xCoordinate,double yCoordinate) {  
         this.xCoordinate = xCoordinate;
         this.yCoordinate = yCoordinate;
+        axisPoint();
     }
 
     //Point Class Methods...
