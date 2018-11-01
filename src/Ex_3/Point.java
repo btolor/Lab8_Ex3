@@ -40,15 +40,32 @@ public class Point {
     }
  
     //Point Class Process Methods...
+    /*
+    The axisPoint method sets the point string variable...
+    */
     public String axisPoint(){
-        String testPoint = "(" + String.valueOf(getxCoordinate()) +
-                "," + String.valueOf(getyCoordinate()) +")";
+        String testPoint = "(" + getxCoordinate() +
+                "," + getyCoordinate() +")";
         setPoint(testPoint);
         return getPoint();
     }
-    
-    
-    
-    
+    /*
+    This method prints the point...
+    */
+    public void showPoint() {
+        System.out.println("The point is: " + getPoint());
+    }
+    /*
+    This method prints the x-coordinate...
+    */
+    public void xCoordinate(){
+        System.out.println("The x-coordinate is: " + getxCoordinate());
+    }
+    /*
+    This method prints the y-coordinate...
+    */
+    public void yCoordinate(){
+        System.out.println("The y-coordinate is: " + getyCoordinate());
+    }
     
 }
