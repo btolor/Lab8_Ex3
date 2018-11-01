@@ -3,11 +3,11 @@ package Ex_3;
 import java.util.Scanner;
 
 public class test {
-    //Test Class Scanner...
+    //Test Class Scanner object...
     static Scanner scan = new Scanner(System.in);
     
     //Test Class Method...
-    //X-Coordinates...
+    //X-Coordinates prompts the user to input the x-coordinate...
     public static double xCoordinate(){
         double x;
         System.out.print("Enter the X-coordinates: ");
@@ -19,7 +19,7 @@ public class test {
         System.out.println();
         return x;
     }
-    //Y-Coordinates...
+    //Y-Coordinates prompts the user to input the y-coordinate...
     public static double yCoordinate(){
         double y;
         System.out.print("Enter the Y-coordinates: ");
@@ -35,11 +35,13 @@ public class test {
     public static void main(String[] args) {
         //Main method variables...
         double x,y;
-        String point;
         x = xCoordinate();
         y = yCoordinate();
         Point xyAxis = new Point(x, y);
-        System.out.println(xyAxis.axisPoint());
+        xyAxis.xCoordinate();
+        xyAxis.yCoordinate();
+        xyAxis.axisPoint();
+        
     }
     
 }
