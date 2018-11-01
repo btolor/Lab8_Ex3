@@ -40,7 +40,7 @@ public class test {
         Point xyAxis = new Point(x, y);
         xyAxis.xCoordinate();
         xyAxis.yCoordinate();
-        xyAxis.axisPoint();
+        xyAxis.showPoint();
         
     }
     
